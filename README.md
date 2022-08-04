@@ -8,7 +8,7 @@ distance from the earth and if they are potentially hazardous
 * MVVM Architecture 
 * Retrofit library for interacting with REST APIs
 * RecyclerView for reuse and efficient loading of views
-* ViewModel for persisting data during configuratioon change
+* ViewModel for persisting data during configuration change
 * Moshi library for parsing JSON into Kotlin data classes
 * DataBinding of Layouts and Views
 * Coil image library for efficient loading of images
