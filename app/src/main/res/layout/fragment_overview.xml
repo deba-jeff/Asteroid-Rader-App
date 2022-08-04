@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="overviewViewModel"
+            type="ukponahiunsijeffery.example.asteroidraderapp.overview.OverviewViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/app_background"
+        tools:context=".overview.OverviewFragment">
+
+        <FrameLayout
+            android:id="@+id/activity_main_image_of_the_day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/image_of_the_day"
+                app:pictureOfTheDay="@{overviewViewModel.pictureOfTheDay}"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/loading_animation"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                app:pictureOfTheDayStatusImageView="@{overviewViewModel.pictureDataResultStatus}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                app:pictureOfTheDayStatusTextView="@{overviewViewModel.pictureDataResultStatus}"
+                tools:text="@string/picture_of_the_day_loading_error_message"
+                android:textColor="@color/default_text_color"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="16dp"
+                tools:text="Image of the Day"
+                app:pictureOfTheDayHeadingTextView="@{overviewViewModel.pictureDataResultStatus}"
+                android:textColor="@color/default_text_color"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="#55010613"/>
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/nasa_recyclerviewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="16dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/list_item" />
+
+    </LinearLayout>
+</layout>

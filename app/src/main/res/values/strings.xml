@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Asteroid Rader App</string>
+    <string name="absolute_magnitude_format">%f au</string>
+    <string name="estimated_diameter_format">%f km</string>
+    <string name="relative_velocity_format">%s km/hr</string>
+    <string name="distance_from_earth_format">%s km</string>
+
+    <string name="picture_of_the_day_loading_error_message">Couldn’t load image\nCheck internet Connection</string>
+    <string name="picture_of_the_day_heading_text">Image of the Day</string>
+
+</resources>

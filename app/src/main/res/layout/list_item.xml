@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="asteroidDomain"
+            type="ukponahiunsijeffery.example.asteroidraderapp.domain.AsteroidDomain" />
+        <variable
+            name="clicklistener"
+            type="ukponahiunsijeffery.example.asteroidraderapp.overview.AsteroidAdapter.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:background="@color/app_background"
+        android:onClick="@{() -> clicklistener.onClick(asteroidDomain)}">
+
+        <TextView
+            android:id="@+id/asteroid_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/default_text_color"
+            app:overviewNameText="@{asteroidDomain.name}"
+            tools:text="465633 (137062 WM)" />
+
+        <TextView
+            android:id="@+id/asteroid_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:textColor="@color/default_text_color"
+            app:overviewDateText="@{String.valueOf(asteroidDomain.closeApproachDate)}"
+            tools:text="2022-07-09" />
+
+        <ImageView
+            android:id="@+id/asteroid_status_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:overviewPotentiallyHazardousImage="@{asteroidDomain.potentiallyHazardous}"
+            tools:src="@drawable/ic_status_potentially_hazardous" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="ukponahiunsijeffery.example.asteroidraderapp.detail.DetailViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_main_image_of_the_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:detailsPotentiallyHazardousImage="@{viewModel.selectedProperty.potentiallyHazardous}"
+                tools:src="@drawable/asteroid_safe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close Approach Date"
+                android:textColor="@color/default_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/default_text_color"
+                app:detailsCloseApproachDateString="@{viewModel.selectedProperty.closeApproachDate}"
+                tools:text="2022-07-09" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absolute Magnitude"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/default_text_color"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/default_text_color"
+                app:detailsAbsoluteMagnitudeDouble="@{viewModel.selectedProperty.absoluteMagnitude}"
+                tools:text="16.64 au" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated Diameter"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/default_text_color"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/default_text_color"
+                app:detailsEstimatedDiameterDouble="@{viewModel.selectedProperty.estimatedDiameter}"
+                tools:text="2.7928009194km" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relative Velocity"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/default_text_color"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/default_text_color"
+                app:detailsRelativeVelocityString="@{viewModel.selectedProperty.relativeVelocity}"
+                tools:text="67835.1837588606km/hr" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance From Earth"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/default_text_color"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                android:textColor="@color/default_text_color"
+                app:detailsDistanceFromEarthString="@{viewModel.selectedProperty.distanceFromEarth}"
+                tools:text="64328153.186218168km" />
+        </LinearLayout>
+    </ScrollView>
+</layout>
