@@ -19,7 +19,7 @@ distance from the earth and if they are potentially hazardous
 * Kotlin Coroutine for asynchronous operations
 
 ## Requirements
-* You need and API key from the NASA API to use this App
+* You need an API key from the NASA API to use this App
 * To get an API key, click https://api.nasa.gov/
 
 ## App Demo
