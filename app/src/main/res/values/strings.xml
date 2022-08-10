@@ -7,5 +7,13 @@
 
     <string name="picture_of_the_day_loading_error_message">Couldn’t load image\nCheck internet Connection</string>
     <string name="picture_of_the_day_heading_text">Image of the Day</string>
+    <string name="close_approach_date_title">Close Approach Date</string>
+    <string name="absolute_magnitude_title">Absolute Magnitude</string>
+    <string name="estimated_diameter_title">Estimated Diameter</string>
+    <string name="relative_velocity_title">Relative Velocity</string>
+    <string name="distance_from_earth_title">Distance From Earth</string>
+    <string name="today_asteroids">Today Asteroids</string>
+    <string name="this_week_asteroids">This week Asteroids</string>
+    <string name="saved_asteroids">Saved Asteroids</string>
 
 </resources>
