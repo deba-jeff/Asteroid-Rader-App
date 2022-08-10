@@ -30,7 +30,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Close Approach Date"
+                android:text="@string/close_approach_date_title"
                 android:textColor="@color/default_text_color"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Absolute Magnitude"
+                android:text="@string/absolute_magnitude_title"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/default_text_color"
@@ -66,7 +66,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estimated Diameter"
+                android:text="@string/estimated_diameter_title"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/default_text_color"
@@ -84,7 +84,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Relative Velocity"
+                android:text="@string/relative_velocity_title"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/default_text_color"
@@ -102,7 +102,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Distance From Earth"
+                android:text="@string/distance_from_earth_title"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/default_text_color"
