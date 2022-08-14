@@ -176,9 +176,17 @@ fun bindDetailsPotentiallyHazardous(detailsPotentiallyHazardousImageView: ImageV
 
     if (detailsPotentiallyHazardousBoolean){
         detailsPotentiallyHazardousImageView.setImageResource(R.drawable.asteroid_hazardous)
+
+        // Potentially hazardous Asteroid ImageView content description
+        detailsPotentiallyHazardousImageView.contentDescription = detailsPotentiallyHazardousImageView.context.
+        getString(R.string.potentially_hazardous_asteroid_image)
     }
     else{
         detailsPotentiallyHazardousImageView.setImageResource(R.drawable.asteroid_safe)
+
+        // Not hazardous Asteroid ImageView content description
+        detailsPotentiallyHazardousImageView.contentDescription = detailsPotentiallyHazardousImageView.context.
+        getString(R.string.not_hazardous_asteroid_image)
     }
 }
 
