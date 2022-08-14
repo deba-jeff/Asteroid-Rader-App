@@ -74,9 +74,17 @@ fun bindOverviewPotentiallyHazardous(overViewPotentiallyHazardousImageView: Imag
 
     if (overViewPotentiallyHazardousBoolean){
         overViewPotentiallyHazardousImageView.setImageResource(R.drawable.ic_status_potentially_hazardous)
+
+        // Potentially hazardous Asteroid icon content description
+        overViewPotentiallyHazardousImageView.contentDescription = overViewPotentiallyHazardousImageView.context.
+        getString(R.string.potentially_hazardous_asteroid_icon)
     }
     else{
         overViewPotentiallyHazardousImageView.setImageResource(R.drawable.ic_status_normal)
+
+        // Not hazardous Asteroid icon content description
+        overViewPotentiallyHazardousImageView.contentDescription = overViewPotentiallyHazardousImageView.context.
+        getString(R.string.not_hazardous_asteroid_icon)
     }
 
 }
