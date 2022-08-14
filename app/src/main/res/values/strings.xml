@@ -15,5 +15,11 @@
     <string name="today_asteroids">Today Asteroids</string>
     <string name="this_week_asteroids">This week Asteroids</string>
     <string name="saved_asteroids">Saved Asteroids</string>
+    <string name="image_of_the_day_content_description">The image of the day is %s</string>
+    <string name="potentially_hazardous_asteroid_icon">Potentially hazardous Asteroid icon</string>
+    <string name="not_hazardous_asteroid_icon">Not hazardous Asteroid icon</string>
+    <string name="potentially_hazardous_asteroid_image">Potentially hazardous Asteroid image</string>
+    <string name="not_hazardous_asteroid_image">Not hazardous Asteroid image</string>
+
 
 </resources>
