@@ -31,6 +31,10 @@ fun bindPictureOfTheDay(pictureImageView: ImageView, pictureOfTheDayObject: Pict
             pictureImageView.load(pictureUri){
                 placeholder(R.drawable.loading_animation)
             }
+
+            // Picture of the day content description
+            pictureImageView.contentDescription = pictureImageView.context.getString(
+                R.string.picture_of_the_day_content_description, pictureOfTheDayObject.title)
         }
 
     }
